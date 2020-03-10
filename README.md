@@ -2,5 +2,6 @@
 
 ## Game_2048
 Core: dimensionality reduction.
+
 Run with console.
 
