@@ -1,14 +1,12 @@
 """
-    数据模型：2048移动模型
+   DataModel
 """
 
 
 class DirectionModel:
     """
-        方向数据模型
-        枚举  常量(命名全部大写)
+        Direction
     """
-    # 在整数基础上，添加一个人容易识别的"标签"
     UP = 0
     DOWN = 1
     LEFT = 2
@@ -16,10 +14,6 @@ class DirectionModel:
 
 
 class Location:
-    """
-
-    """
-
     def __init__(self, r, c):
         self.row_index = r
         self.column_index = c
