@@ -1,3 +1,4 @@
+#evn:python3.6
 from ui import GameConsoleView
 
 if __name__=="__main__":
