@@ -61,7 +61,7 @@ class GameCoreController:
 　
     def __move_up(self):
         """
-            move number to up
+            move number up
         """
         self.__square_matrix_transpose()
         self.__move_left()
@@ -70,7 +70,7 @@ class GameCoreController:
 
     def __move_down(self):
         """
-            move number to down
+            move number down
         """
         self.__square_matrix_transpose()
         self.__move_right()
@@ -102,11 +102,9 @@ class GameCoreController:
     def generate_random_number(self):
 
         self.__get_empty_location()
-
         if len(self.__list_empty_location) == 0:
             return
         location = random.choice(self.__list_empty_location)
-
         self.__list_map[location.row_index][location.column_index] = self.__select_random_number()
         self.__list_empty_location.remove(location)
 
@@ -129,7 +127,6 @@ class GameCoreController:
 
         if len(self.__list_empty_location) > 0:
             return False
-
         for r in range(len(self.__list_map)):
             for c in range(len(self.__list_map[r]) - 1):
                 if self.__list_map[r][c] == self.__list_map[r][c + 1] or self.__list_map[c][r] == self.__list_map[c + 1][r]:
